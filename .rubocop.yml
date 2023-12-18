@@ -1,0 +1,46 @@
+require:
+  # - rubocop-rails
+  - rubocop-capybara
+  - rubocop-factory_bot
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2.2
+  # Exclude:
+  # - "vendor/**/*"
+  # - "**/tmp/**/*"
+  # - "**/db/**/*"
+  # - "**/bin/**/*"
+  # - "**/node_modules/**/*"
+  # - "**/config/initializers/**/*"
+  # - "**/config/environments/**"
+  DisplayCopNames: true
+
+# Rails:
+#   Enabled: true
+
+Layout/LineLength:
+  Enabled: true
+  Max: 120
+  AllowURI: true
+  URISchemes:
+  - http
+  - https
+
+RSpec/DescribeClass:
+  Exclude:
+  - "**/spec/acceptance/**/*"
+
+RSpec/NoExpectationExample:
+  Exclude:
+  - "**/spec/acceptance/**/*"
+
+# Metrics/BlockLength:
+#   Exclude:
+#   - "**/spec/**/*"
+#   - "**/app/views/**/*"
+
+Style/Documentation:
+  Enabled: false
