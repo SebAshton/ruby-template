@@ -9,7 +9,6 @@ ruby '3.2.2'
 gem 'pg', '~> 1.4'
 
 group :development, :test do
-  gem 'brakeman'
   gem 'byebug'
   gem 'dotenv'
   gem 'factory_bot'
